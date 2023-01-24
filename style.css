@@ -1,7 +1,17 @@
+@keyframes slidein{
+    from{
+        font-size:initial;
+    }
+
+    to{
+        font-size:larger;
+    }
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
-    background-color: rgb(99, 57, 31);
+    /*background-color: rgb(99, 57, 31);*/
 }
 
 .container{
@@ -11,15 +21,17 @@ body{
 }
 
 #top-head{
-    background-color: darkgreen;
+    background-color: black;
     color: whitesmoke;
     font-size: 20px;
     text-align: center;
+    text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.125);
 }
 
 #navigation{
-    background-color: black;
+    background-color: rgb(51, 51, 51);
     color: whitesmoke;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.125);
 }
 
 #navigation ul{
