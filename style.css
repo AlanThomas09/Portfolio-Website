@@ -1,0 +1,26 @@
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+#navigation{
+    background-color: black;
+    color: whitesmoke;
+}
+
+#navigation ul{
+    padding:0;
+    list-style: none;
+}
+
+#navigation li{
+    display: inline;
+}
+
+#navigation a{
+    color: whitesmoke;
+    font-size: 20px;
+    padding-right: 15px;
+    text-decoration: solid;
+}
