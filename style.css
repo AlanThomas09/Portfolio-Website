@@ -1,3 +1,5 @@
+@font-face { font-family: NeoNeon; src: url('Neoneon.otf'); }
+
 @keyframes slidein{
     from{
         font-size:initial;
@@ -21,6 +23,7 @@ body{
 }
 
 #top-head{
+    font-family: NeoNeon;
     background-color: black;
     color: whitesmoke;
     font-size: 20px;
