@@ -1,25 +1,5 @@
 @font-face { font-family: NeoNeon; src: url('Neoneon.otf'); }
 
-@keyframes navHover{
-    from{
-        font-size:18px;
-    }
-
-    to{
-        font-size:22px;
-    }
-}
-
-@keyframes navExit{
-    from{
-        font-size:22px;
-    }
-
-    to{
-        font-size:18px;
-    }
-}
-
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -62,17 +42,9 @@ body{
     font-size: 18px;
     padding-right: 20px;
     text-decoration: solid;
+    transition: font-size 0.5s;
 }
 
 #navigation a:hover{
-    /*font-size:22px;*/
-    animation-name: navHover;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-#navigation a:not(:hover){
-    animation-name: navExit;
-    animation-duration: 1s;
-    animation-fill-mode: backwards;
+    font-size:22px;
 }
