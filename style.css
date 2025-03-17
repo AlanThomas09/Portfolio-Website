@@ -332,17 +332,60 @@ footer {
     margin-top: 2rem;
 }
 
+.contact-content.centered {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 2rem;
+}
+
 .contact-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     margin-top: 2rem;
 }
 
 .contact-item {
-    margin-bottom: 1.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 .contact-item h4 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+}
+
+.contact-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-item a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 .contact-form {
@@ -460,5 +503,15 @@ footer {
     
     .resume-container iframe {
         height: 600px;
+    }
+    
+    .contact-details {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .contact-content.centered {
+        max-width: 100%;
+        padding: 0 1rem;
     }
 }
